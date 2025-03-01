@@ -1,0 +1,14 @@
+﻿@model HomeViewModel
+
+<h1>Топ послуги</h1>
+<div class="row mt-5 md-2">
+    @{
+        foreach (Service service in Model.favServices)
+        {
+            @Html.Partial("AllServices", service)
+        }
+
+    }
+</div>
+
+

@@ -1,0 +1,12 @@
+﻿    <h1>Всi послуги</h1>
+    <h3>@Model.currCategory</h3>
+    <div class="row mt-5 md-2">
+        @{
+            foreach (Service service in Model.allServices)
+            {
+            @Html.Partial("AllServices", service)
+            }
+
+         }
+    </div>
+  

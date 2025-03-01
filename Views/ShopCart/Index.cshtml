@@ -1,0 +1,13 @@
+﻿ @model ShopServiceViewModel
+<div class = "container">
+@foreach (var el in Model.shopCart.listShopItems)
+{
+    <div class="alert alert-warning mt-3">
+        <b>Сервіс:</b> @el.service.name<br/>
+        <b>Ціна:</b>@el.service.price.ToString("c")
+    </div>
+    }
+<hr/>
+<a class="btn btn-danger mb-5" asp-controller="Order" asp-action="Checkout">Сплатити</a>
+</div>
+
