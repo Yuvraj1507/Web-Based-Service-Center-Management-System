@@ -75,3 +75,22 @@ Ensure you have the following installed:
 
 ### **2️⃣ Clone the Repository**  
 ```sh
+git clone https://github.com/YourUsername/WebServiceCenterManagement.git
+cd WebServiceCenterManagement
+
+2️⃣ Configure the database in appsettings.json
+3️⃣ Run database migrations using:
+
+sh
+Copy
+Edit
+dotnet ef database update
+4️⃣ Start the application:
+
+sh
+Copy
+Edit
+dotnet run
+
+5️⃣ Access UI at: http://localhost:5000/
+
